@@ -27,13 +27,18 @@ const button = document.querySelector('#button')
 
 // Indentificação do Ususario
 button.addEventListener('click', () => {
-    const usuario = usuarios.find(usuario => {
-        return usuario.email === email.value && usuario.senha === senha.value
-    })
-    if(usuario){
-        alert(`Bem-vindo ${usuario.nome}!`)
-    }else{
-        alert('Email ou senha incorretos')
+    if(!email.value || !password.value){
+        alert('Preencha todos os campos')
     }
-    console.log(usuario);
+    else{
+        const usuario = usuarios.find(usuario => {
+            return usuario.email === email.value && usuario.senha === senha.value
+        })
+        if(usuario){
+            alert(`Bem-vindo ${usuario.nome}!`)
+        }else{
+            alert('Email ou senha incorretos')
+        }
+        console.log(usuario);
+    }
 })
