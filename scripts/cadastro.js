@@ -54,6 +54,8 @@ button.addEventListener('click', () =>{
                 }
                 usuarios.push(novoUsuario)
                 console.log(usuarios);
+                alert('Cadastro realizado com sucesso')
+                window.location.href= "../pages/inicio.html"
             }
 
         }
