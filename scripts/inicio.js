@@ -66,6 +66,7 @@ const concluido = document.querySelector('#concluido')
 const pontos = document.querySelector('#pontos')
 const pontosSimulacao = document.querySelector('#pontosSimulacao')
 const meta = document.querySelector('#meta')
+const escolhaMeta = document.querySelector('#escolhaMeta')
 
 
 
@@ -82,6 +83,11 @@ function aumentaProgresso(){
 function calculaTrajeto(){
     let trajetoCalculado = usuarios[0].km / usuarios[0].meta * 100
     concluido.style.width = `${trajetoCalculado}%`
+}
+
+function atualizaMeta(){
+    usuarios[0].meta = parseInt(escolhaMeta.value)
+    atualizaDados()
 }
 
 function atualizaDados(){
