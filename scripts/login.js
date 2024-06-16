@@ -38,6 +38,7 @@ button.addEventListener('click', () => {
         })
         if(usuario){
             alert(`Bem-vindo ${usuario.nome}!`)
+            
             window.location.href= "../pages/inicio.html"
         }else{
             alert('Email ou senha incorretos')
