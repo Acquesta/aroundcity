@@ -59,22 +59,22 @@
             <div class="percurso">
                 <div class="infos">
                     <p>Seu progresso</p>
-                    <p>1KM</p>
+                    <p id="progresso">1</p>
                 </div>
-                <div class="trajeto">
-                    <div class="concluido"></div>
+                <div class="trajeto" id="trajeto">
+                    <div class="concluido" id="concluido"></div>
                 </div>
                 <div class="metas">
-                    <p class="pontos">PONTOS: 0</p>
-                    <p>Meta: 10km</p>
+                    <p class="pontos" id="pontos">PONTOS: 0</p>
+                    <p id="meta"></p>
                 </div>
             </div>
             <div class="simulacao">
                 <h2>Simulacao</h2>
                 <div class="botoes">
-                    <input type="button" value="<">
-                    <p>1km</p>
-                    <input type="button" value=">">
+                    <input type="button" value="<" onclick="diminuiProgresso()">
+                    <p id="pontosSimulacao">1</p>
+                    <input type="button" value=">" onclick="aumentaProgresso()">
                 </div>
             </div>
         </div>

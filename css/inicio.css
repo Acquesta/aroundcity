@@ -157,6 +157,7 @@ header ul li:hover {
     height: 100%;
     width: 100px;
     background-color: #4ef553;
+    transition: 1s;
 }
 .botoes{
     display: flex;
